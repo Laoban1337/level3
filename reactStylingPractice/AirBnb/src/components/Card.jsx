@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Card(props) {
 let badgeText;
-if(props.openSpots === 0){
+if(props.element.openSpots === 0){
     badgeText = "SOLD OUT"
 }
-else if(props.location ==="Online"){
+else if(props.element.location ==="Online"){
     badgeText = "ONLINE"
 }
   return (
@@ -13,6 +13,7 @@ else if(props.location ==="Online"){
       <a href="">
         <img src={props.element.coverImg} className="card-photo" />
       </a>
+      {/* conditional rendering */}
       {badgeText && <div className="card--badge">{badgeText}</div>}
       <div className="card-box">
         <h4 className=" card-rating">

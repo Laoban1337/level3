@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-- {
+  height: 600px;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+  background-repeat: no-repeat;
+}
+.header-- {
+  background-color: grey;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  opacity: 88%;
+}
+.header--title{
+  padding: 41px;
+  margin-top: 50px;
+}
+.header--intro{
+  margin: 20px;
+  text-align: center;
+}
+
+.nav-- > ol {
+  list-style: none;
+  display: flex;
+   color: blanchedalmond;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--box{
+  list-style-type: none;
+  position: relative;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 58%;
+}
+.start{
+font-size: 2rem;
+}
+a:link{
+  text-decoration: none;
+}
+a:visited{
+  color: black; /* or any other color */
+  text-decoration: none; /* or any other text decoration */
+}
+a > ol >li:visited{
+  color: rgb(197, 38, 38); /* or any other color */
+  text-decoration: none; /* or any other text decoration */
+}
+ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+li {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: inline;
+  justify-content: space-evenly;
+  
+}
+img{
+  display: inline;
+}
+.nav--:hover{
+ color: aquamarine;
+}
+
+.post-container{
+  margin-top: 100px;
+  text-align: center;
+  width: 50%;
+  margin-left: 450px;
+  margin-bottom: 28px;
+}
+
+.posts{
+  padding: 20px;
+  font-size: 36px;
+}
+
+.footer{
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:transparent;
+  text-align: center;
+  color: black;
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: center;
+   */
+
+}
+
+.footer-img{
+  width: 35px;
+  height: 50px;
+ 
+}
