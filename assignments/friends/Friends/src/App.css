@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #DDE6ED
+}
+.friend-box {
+  height: 100px;
+  width: 180px;
+  border: 2px solid #0e0e0e;
+}
+.friend-div{
+  border: 8px solid black;
+  border-bottom: transparent;
+  border-radius: 19px;
+  padding-bottom: 12px;
+
+}
+.friend-name {
+  font-size: 2.5rem;
+  color: blueviolet;
+}
+.friend-age {
+  padding-top: 8px;
+  padding: bottom 4px;
+  font-size: 1.5rem;
+}
+
+.header-title{
+  margin-left:38%;
+}
+.pet-title{
+  font-size: 32px;
+  color: #03C988;
+}
+li {
+  width: 50%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style-type: none;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  font-size: larger;
+  border: 6px solid grey;
+  margin-left: 25%;
+}
+.site-container {
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.site-title {
+  display: flex;
+  margin-bottom: 32px;
+  
+  height: auto;
+  width: 100%;
+  color: blue;
+}
