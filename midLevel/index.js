@@ -50,16 +50,24 @@ const inpu2 ="Tis the season of the end, when man and all he knows will be cast 
 const input3 = "This one should be easy"
 
 function countVowels(input) {
+
+    //array of vowels 
   const vowels = ["a", "e", "i", "o", "u"];
 
+  //vowel count initialized
   let vowelCount = 0;
+
+  //all input to lowercase
   input = input.toLocaleLowerCase();
 
+  //for every character in input split will seperate them and check if they are a vowel if so vowelCount in incremented
   for(let char of input.split("")){
     if (vowels.includes(char)) {
         vowelCount++;
     }
   }
+
+  //returns the total ammount of vowels in the input string
   return vowelCount;
 }
 

@@ -59,3 +59,9 @@ nav ul li {
   color: white;
   border-radius: 2px;
 }
+
+.meme-img{
+  text-align: center;
+  width: auto;
+  height: 200px;
+}
