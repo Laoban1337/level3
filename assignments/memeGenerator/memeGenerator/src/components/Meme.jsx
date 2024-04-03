@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import memesData from "../memesData";
 
 export default function Meme() {
-  const [memeImg, setMemeImg] = useState("");
+  const [memeImg, setMemeImg] = useState("https://i.imgflip.com/46e43q.png");
 
   function handleClick(e) {
     e.preventDefault();
@@ -22,7 +22,10 @@ export default function Meme() {
         <button onClick={handleClick} className="form--button">
           Generate Meme
         </button>
-        ,<img src={memeImg} alt="random meme image" className="meme-img" />
+        <div className="img-container">
+          <img src={memeImg} alt="random meme image" className="meme-img" />
+        </div>
+        
       </form>
     </div>
   );
