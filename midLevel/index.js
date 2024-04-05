@@ -9,7 +9,7 @@
 //   const negativeNumbers = [];
 
 //   //maps over the array pushing negatives into the indices
-//   const postitiveNumbers = array
+//   const positiveNumbers = array
 //     .map((num, index) => {
 //       if (num === -1) {
 //         negativeNumbers.push(index);
@@ -21,7 +21,7 @@
 //     .filter((item) => item !== null);
 
 //   //sorts the non negative numbers
-//   postitiveNumbers.sort((a, b) => a.num - b.num);
+//   positiveNumbers.sort((a, b) => a.num - b.num);
 
 //   //used to set index for positives
 //   let positiveIndex = 0;
@@ -31,7 +31,7 @@
 //     if (negativeNumbers.includes(index)) {
 //       return -1;
 //     } else {
-//       const sortedNum = postitiveNumbers[positiveIndex].num;
+//       const sortedNum = positiveNumbers[positiveIndex].num;
 //       positiveIndex++;
 //       return sortedNum;
 //     }
@@ -43,7 +43,7 @@
 
 // console.log(solution(arrayOfNumbers3));
 
-const input = "In a world where everyone has lost hope, one man has a plan to bring hope to the masses once again. this summer..";
+const input = "Hello World";
 
 const inpu2 ="Tis the season of the end, when man and all he knows will be cast into utter confusion"
 
@@ -51,7 +51,7 @@ const input3 = "This one should be easy"
 
 function countVowels(input) {
 
-    //array of vowels 
+    //array of vowels
   const vowels = ["a", "e", "i", "o", "u"];
 
   //vowel count initialized
@@ -72,3 +72,31 @@ function countVowels(input) {
 }
 
 console.log(countVowels(input3));
+
+
+function capitalize(string){
+  // convert string to arr
+  const newArr = string.split(" ")
+ 
+  // map or loop over it and identify the first letter of each word
+  // capitalize each word
+  const mappedArray = newArr.map(word => word[0].toUpperCase() + word.slice(1))
+
+  // arr back to string
+
+  const final = mappedArray.join(" ")
+
+  return final
+}
+
+const sentence = "brian is the best he can be!" // "Brian Is The Best He Can Be!"
+
+console.log(capitalize(sentence))
+
+//understand the ?  // clarification
+
+//pseduo code // plan
+
+// Zak's 3   ->    What data is coming in ?   What am i doing to it?   What am I returning?
+
+
