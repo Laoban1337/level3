@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+import RandomColor from "../../randomColor/src/components/RandomColor";
 
 function App() {
   //setting state
@@ -15,12 +16,14 @@ function App() {
       ...prevInfo,
       namesList: [...prevInfo.namesList, formData.input],
     }));
+
     //logic to clear input after submit
     setFormData((prevInfo) => ({
       ...prevInfo,
       input: "",
     }));
   }
+
   // input on change
   function handleChange(event) {
     event.preventDefault();

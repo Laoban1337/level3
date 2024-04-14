@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  min-height: 100vh; /* Change to min-height to allow content to push down */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+  padding: 20px;
+}
+
+.badgeForm {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin-bottom to separate from .newBadges */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+  margin-bottom: 46px;
+}
+
+.badgeForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.badgeForm input[type="text"],
+.badgeForm input[type="email"],
+.badgeForm input[type="date"],
+.badgeForm textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.badgeForm textarea {
+  height: auto;
+}
+
+.badgeForm button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.badgeForm button:hover {
+  background-color: #0056b3;
+}
+
+.newBadges {
+  width: 100%;
+  /* Add styles for new badges container */
+}
+
+.invalid{
+  color: red;
+  text-decoration:strike-through;
+}
+
+#aboutSelf{
+  width: 596px;
+  height: 210px;
+}
