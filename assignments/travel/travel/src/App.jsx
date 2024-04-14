@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+    <div className="test">test</div>
       <h1 className='travel-title'>Travel Options</h1>
       <div className='travel-container'>{travelElements}
       <Footer/>
