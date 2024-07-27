@@ -35,26 +35,22 @@ function About() {
           </li>
         </ul> */}
         <p className="content">
-          "My name is Brian, originally from the sunny Bahamas, I spent my
-          formative years soaking up the warmth of Florida before making a
-          life-changing move to Utah in 2011. Since childhood, I've been
-          fascinated by coding, inspired by movies like 'Zero Cool.' However, it
-          wasn't until recently that I could fully pursue my passion. Now, I
-          stand ready and excited to embark on this lifelong journey of coding.
-          Learning something new every day, I'm eager to see how coding will
-          transform me and my world. It's not just about creating software; it's
-          about unlocking the door to endless possibilities and creativity. From
-          the turquoise waters of the Bahamas to the snowy mountains of Utah, my
-          journey into coding is a testament to persistence and passion. With
-          each line of code, I'm changing in wonderful ways, growing not only as
-          a coder but as a person. Join me as I navigate this exciting path, one
-          line of code at a time." "Edison once said, 'I have never failed, I
-          have only found 10,000 ways that don't work.' This statement resonates
-          because in reality, none of us truly fail; we discover ways that don't
-          work, leading us closer to what does. This rings true in my coding
-          journey as I experiment and learn from what doesn't work, guiding me
-          towards success. It's like digging for gold; the knowledge gained is
-          invaluable."
+          Hi, I'm Brian, a dedicated coder with a rich and diverse background.
+          Originally from the Bahamas, I moved to Florida during my formative
+          years and then made a life-changing move to Utah in 2011. My
+          fascination with coding began in childhood, inspired by "Hackers" movies.
+          However, it's only recently that I've been able to fully pursue this
+          passion. I am committed to continuous learning and personal growth,
+          eager to see how coding can transform not just my career but my
+          perspective on problem-solving and creativity. My journey from the
+          turquoise waters of the Bahamas to the snowy mountains of Utah
+          reflects my persistence and passion for coding. In my coding journey,
+          I believe in the value of experimentation and learning from mistakes.
+          As Thomas Edison once said, "I have not failed. I've just found 10,000
+          ways that won't work." This mindset drives me to innovate and persist,
+          continuously improving my skills and finding new solutions. Join me as
+          I navigate the exciting path of coding, embracing each challenge and
+          opportunity to grow as a professional and as a person.
         </p>
         <footer className="major">
           {/* <ul className="actions special">

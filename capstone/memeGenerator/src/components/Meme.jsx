@@ -1,67 +1,93 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+import "./Components.css";
 
-export default function Meme() {
-  const [responseData, setResponseData] = useState(null);
-  //state for saving and deleting the memes
-  const [savedMemes, setSavedMemes] = useState([]);
-  //setting a loading state
-  //   const [loading, setLoading] = useState(true);
+export default function Meme(props) {
+  const { meme, handleDelete, saveMeme } = props;
 
-  const fetchMemeData = async () => {
-    try {
-      //   setLoading(true);
-      const response = await axios.get("https://api.imgflip.com/get_memes");
-      setResponseData(response.data.memes);
-    } catch (error) {
-      console.log("There was an error fetching your meme data: " + error);
-    } //  finally {
-    //   // After fetching memes, set loading state to false
-    //   setLoading(false);
-    // }
-  };
+  const [toggle, setToggle] = React.useState(true);
 
-  function onChange(event) {
+  const [edit, setEdit] = React.useState({
+    topText: meme.topText ? meme.topText : "",
+    bottomText: meme.bottomText,
+    randomImage: meme.randomImage,
+    id: meme.id,
+  });
+
+  function handleChange(event) {
     const { name, value } = event.target;
-    setResponseData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setEdit((prevEdit) => {
+      return {
+        ...prevEdit,
+        [name]: value,
+      };
+    });
   }
 
-  function handleClick(event) {
+  function handleSubmit(event) {
     event.preventDefault();
-    const arrayOfMemes = responseData;
-    const randomNumber = Math.floor(Math.random() * arrayOfMemes.length);
-    const url = arrayOfMemes[randomNumber].url;
 
-    setResponseData((prevData) => ({ ...prevData, url: url }));
+    console.log("handle Submit");
+
+    setToggle((prev) => !prev);
   }
 
   return (
-    <div className="main">
-      <form action="" className="form" onSubmit={handleClick}>
-        <input
-          type="text"
-          placeholder="topText"
-          className="topText"
-          name="topText"
-        />
-        <br />
-        <input
-          type="text"
-          placeholder="bottomText"
-          className="bottomText"
-          name="bottomText"
-        />
-        <br />
-        <button className="form--button">Generate Meme</button>
-        <div className="meme">
-          <div className="img-container">
-            <img src={url} alt="random meme image" className="meme-img" />
-          </div>
+    <>
+      {toggle ? (
+        <div key={meme.id} className="meme">
+          <img src={meme.randomImage} className="meme--image" />
+          <h2 className="meme--edit top">{edit.topText}</h2>
+          <h2 className="bottom--edit">{meme.bottomText}</h2>
+          <br />
+          <button
+            className="meme--save--button"
+            onClick={() => setToggle((prevState) => !prevState)}
+          >
+            Edit
+          </button>
+          <br />
+          <button
+            className="meme--edit--button"
+            onClick={() => handleDelete(meme.id)}
+          >
+            Delete
+          </button>
         </div>
-      </form>
-    </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <div className="meme">
+            <img src={meme.randomImage} className="meme--image" />
+            <input
+              className="meme--edit top"
+              value={edit.topText}
+              name="topText"
+              onChange={handleChange}
+              placeholder={edit.topText}
+            />
+            <input
+              className="meme--edit bottom"
+              value={edit.bottomText}
+              name="bottomText"
+              onChange={handleChange}
+              placeholder={edit.bottomText}
+            />
+          </div>
+
+          <button
+            className="meme--save--button"
+            onClick={() => saveMeme(edit.id, edit)}
+          >
+            Save
+          </button>
+          <br />
+          <button
+            className="meme--edit--button"
+            onClick={() => setToggle((prev) => !prev)}
+          >
+            Cancel
+          </button>
+        </form>
+      )}
+    </>
   );
 }

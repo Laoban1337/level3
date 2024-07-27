@@ -6,10 +6,10 @@ function Header() {
       {/* Header */}
       <header id="header" className="alt">
         <span className="logo">
-          <img src="hbc3.jpg" alt="" />
+          <img src="hbc3.jpg" alt="" className="intro-img" />
         </span>
         <h1>Brian Monestime</h1>
-        <p>Dedicated, Motivated,Knowledge seeker</p>
+        <p>Dedicated, Motivated, Knowledge Seeker!</p>
       </header>
 
       {/* Nav */}

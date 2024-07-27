@@ -22,7 +22,7 @@ function Footer() {
         </section>
         <section>
             <hr />
-          <h2>Contact Info</h2>
+          {/* <h2>Contact Info</h2>
           <dl className="alt">
             <dt>Address</dt>
             <dd> Somwhere in &bull; Salt Lake City, UT 84000 &bull; USA</dd>
@@ -30,7 +30,7 @@ function Footer() {
             <dd>(000) 000-0000 x 0000</dd>
             <dt>Lostinfo@gmail.com</dt>
            
-          </dl>
+          </dl> */}
           {/* <ul className="icons">
             <li>
               <a href="#" className="icon brands fa-twitter alt">

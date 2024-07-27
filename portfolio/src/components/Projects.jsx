@@ -10,10 +10,12 @@ function Projects() {
               <h2>Commited Coding</h2>
             </header>
             <p>
-              "Since starting my coding journey, I've proudly never missed a
-              day. I'm committed to learning, persevering against all odds, and
-              embracing the endless possibilities provided by code. Every day is
-              a new opportunity to grow and explore!"
+              Since beginning my coding journey, I've been dedicated to
+              continuous learning, overcoming challenges, and exploring the
+              limitless potential of code. Every day brings new opportunities
+              for growth and discovery. As a proud graduate of V School, I am
+              committed to leveraging my skills and knowledge to make a
+              meaningful impact in the tech industry.
             </p>
             {/* <ul className="actions">
               <li>
@@ -34,7 +36,7 @@ function Projects() {
           <h2>Passion Projects</h2>
         </header>
         <ul className="features">
-          <li>
+          {/* <li>
             <span className="icon solid major style1 fa-code"></span>
             <h3>Gastro Roulette</h3>
             <p>
@@ -43,33 +45,35 @@ function Projects() {
               eateries in your area, places them on a roulette, and chooses
               where you'll eat at random! Say goodbye to dinner dilemmas!"
             </p>
-          </li>
+          </li> */}
           <li>
-            <span className="icon major style3 fa-copy"></span>
-            <h3>Chorefull</h3>
+            {/* <span className="icon major style3 fa-copy"></span> */}
+            <a href="https://choreboar.onrender.com/">
+              <img
+                src="../choreboarLogo.jpg"
+                alt="chore boar logo"
+                className="chorelogo"
+              />
+            </a>
+            <h3>ChoreBoar</h3>
             <p>
               "Introducing our chore list app! Perfect for roommates, parents,
-              siblings, or anyone in a household. Create shared chore lists with
-              features like Random Chore, Vote on Chores, and Fixed assignments.
-              Plus, a point-based system lets the household compete for weekly
-              badges and prizes. Say hello to organized and fun chores!"
+              siblings, or anyone in a household. Create shared chore lists. "
             </p>
           </li>
-          <li>
+          {/* <li>
             <span className="icon major style5 fa-gem"></span>
             <h3>Fill app here later</h3>
-            <p>
-           fill in description later
-            </p>
-          </li>
+            <p>fill in description later</p>
+          </li> */}
         </ul>
         <footer className="major">
           <ul className="actions special">
-            <li>
+            {/* <li>
               <a href="generic.html" className="button">
                 Learn More
               </a>
-            </li>
+            </li> */}
           </ul>
         </footer>
       </section>
