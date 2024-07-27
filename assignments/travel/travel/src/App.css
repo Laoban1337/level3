@@ -17,6 +17,10 @@ body {
   width: 200px;
 }
 
+.test{
+  font-size: 5rem;
+}
+
 .depart {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.7rem;

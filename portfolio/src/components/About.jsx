@@ -7,9 +7,21 @@ function About() {
         <header className="major">
           <h2>The Journey so far</h2>
           <p>
-            Fill in inspiring sentence
-            <br />
-            And Make it a good one
+            Hi, I’m Brian, a dedicated coder with a diverse background. My
+            journey through the tech world has equipped me with a robust set of
+            skills. I specialize in JavaScript and React, which I use to build
+            dynamic and efficient web applications. For backend development, I
+            utilize C# to create robust server-side solutions, while TypeScript
+            adds precision and reliability to my code. 
+            <hr></hr>
+            
+            To manage data, I use
+            MongoDB and Mongoose, ensuring efficient data handling and storage.
+            I rely on Git and GitHub for version control, facilitating effective
+            collaboration and progress tracking. Having completed my training at
+            V School, I am committed to continuous learning and professional
+            growth. I am eager to leverage my skills and knowledge to tackle new
+            challenges and contribute to innovative projects.
           </p>
         </header>
         {/* <ul className="statistics">
@@ -34,24 +46,7 @@ function About() {
             <strong>1,024</strong> Nullam
           </li>
         </ul> */}
-        <p className="content">
-          Hi, I'm Brian, a dedicated coder with a rich and diverse background.
-          Originally from the Bahamas, I moved to Florida during my formative
-          years and then made a life-changing move to Utah in 2011. My
-          fascination with coding began in childhood, inspired by "Hackers" movies.
-          However, it's only recently that I've been able to fully pursue this
-          passion. I am committed to continuous learning and personal growth,
-          eager to see how coding can transform not just my career but my
-          perspective on problem-solving and creativity. My journey from the
-          turquoise waters of the Bahamas to the snowy mountains of Utah
-          reflects my persistence and passion for coding. In my coding journey,
-          I believe in the value of experimentation and learning from mistakes.
-          As Thomas Edison once said, "I have not failed. I've just found 10,000
-          ways that won't work." This mindset drives me to innovate and persist,
-          continuously improving my skills and finding new solutions. Join me as
-          I navigate the exciting path of coding, embracing each challenge and
-          opportunity to grow as a professional and as a person.
-        </p>
+
         <footer className="major">
           {/* <ul className="actions special">
             <li>

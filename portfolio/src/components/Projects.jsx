@@ -9,14 +9,27 @@ function Projects() {
             <header className="major">
               <h2>Commited Coding</h2>
             </header>
-            <p>
+            <p className="content">
+              Hi, I'm Brian, a coder with a rich background. Originally from the
+              Bahamas, I moved to Florida and then Utah in 2011. Inspired by the
+              "Hackers" movies, my childhood fascination with coding is now a
+              full-fledged passion. Committed to continuous learning and
+              personal growth, I explore how coding can transform my career and
+              enhance my creativity. My journey from the Bahamas to Utah
+              reflects my persistence. Embracing experimentation and learning
+              from mistakes, I'm driven by Thomas Edison's mindset: "I have not
+              failed. I've just found 10,000 ways that won't work." Join me as I
+              navigate the exciting path of coding, embracing each challenge and
+              opportunity to grow.
+            </p>
+            {/* <p>
               Since beginning my coding journey, I've been dedicated to
               continuous learning, overcoming challenges, and exploring the
               limitless potential of code. Every day brings new opportunities
               for growth and discovery. As a proud graduate of V School, I am
               committed to leveraging my skills and knowledge to make a
               meaningful impact in the tech industry.
-            </p>
+            </p> */}
             {/* <ul className="actions">
               <li>
                 <a href="generic.html" className="button">
