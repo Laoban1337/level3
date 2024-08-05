@@ -10,6 +10,14 @@ function Header() {
         </span>
         <h1>Brian Monestime</h1>
         <p>Dedicated, Motivated, Knowledge Seeker!</p>
+        <a href="https://github.com/Laoban1337/">
+          {" "}
+          <img src="./gitIcon.png" alt="github icon" className="Links" />
+        </a>
+        <a href="https://www.linkedin.com/in/bmonestime-596424103/">
+          {" "}
+          <img src="./linkedin.png" alt="github icon" className="Links" />
+        </a>
       </header>
 
       {/* Nav */}
