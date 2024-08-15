@@ -3815,8 +3815,9 @@ body.is-preload #header.alt .logo {
 #footer .copyright {
   width: 100%;
   margin: 2.5em 0 2em 0;
-  font-size: 0.8em;
+  font-size: 1.8em;
   text-align: center;
+  margin-top: 250px;
 }
 
 @media screen and (max-width: 1280px) {

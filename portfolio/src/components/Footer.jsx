@@ -60,7 +60,7 @@ function Footer() {
           </ul> */}
         </section>
         <p className="copyright">
-          &copy;GlassWalker Studios.
+          &copy;Glass Walker Productions.
         </p>
       </footer>
     </div>

@@ -49,21 +49,31 @@ function Projects() {
           <h2>Passion Projects</h2>
         </header>
         <ul className="features">
-          {/* <li>
-            <span className="icon solid major style1 fa-code"></span>
-            <h3>Gastro Roulette</h3>
+          <li>
+            {/* <span className="icon solid major style1 fa-code"></span> */}
+            <a href="https://GlassWalker.onrender.com/">
+              <img
+                src="./GWalt.jpg"
+                alt="Glass Walker Productions Logo"
+                className="chorelogo"
+              />
+            </a>
+            <h3>Glass Walker Productions</h3>
             <p>
-              "Struggling to decide what's for dinner? Can't agree on a
-              restaurant with your partner? Introducing our app that takes local
-              eateries in your area, places them on a roulette, and chooses
-              where you'll eat at random! Say goodbye to dinner dilemmas!"
+              "Game development has always been a passion of mine, and as I've
+              progressed in my journey, I realized it was time to take the
+              plunge. I’ve begun learning C++ to develop with the Unreal Engine,
+              driven by my love for new technology and the desire to continually
+              challenge myself. With dedication and a bit of luck, I aim to
+              create something extraordinary. You can follow the progress of my
+              future indie game company, Glass Walker Productions!"
             </p>
-          </li> */}
+          </li>
           <li>
             {/* <span className="icon major style3 fa-copy"></span> */}
             <a href="https://choreboar.onrender.com/">
               <img
-                src="../choreboarLogo.jpg"
+                src="./choreboarLogo.jpg"
                 alt="chore boar logo"
                 className="chorelogo"
               />
